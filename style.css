@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #f56e00);
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #00000048;
+    width: 330px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.imgLogo {
+    height: 70px;
+    width: 70px;
+}
+
+#tituloForm {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilização Geral dos Campos */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* AQUI: Garantindo 20px em todos os inputs */
+.campo input, 
+.inputSenha input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px; /* Alterado para 20px */
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input::placeholder {
+    color: #999;
+}
+
+.campo input:focus,
+.inputSenha input:focus {
+    border-color: #f5c800;
+    box-shadow: 0 0 0 3px #f5c8002a;
+}
+
+/* Ajuste específico para o container da senha */
+.inputSenha {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputSenha i {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilização do Botão */
+.form button {
+    padding: 13px;
+    border: 3px solid #f56e00;
+    border-radius: 20px;
+    background: #f56e00;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background: #fff;
+    border: 3px solid #f56e00;
+    color: #f56e00;
+}
+
+/* Mensagem de rodapé */
+.msgCadastro {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#criarConta:hover {
+    text-decoration: underline;
+}

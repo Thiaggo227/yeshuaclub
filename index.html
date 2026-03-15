@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Login | Clube Yeshua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="form" id="formLogin">
+
+            <div class="logo">
+                <img src="images/clube_yeshua_imgLogo.png" class="imgLogo">
+            </div>
+
+            <h2 id="tituloForm">Login</h2>
+
+            <div class="campo" id="campoNome" style="display: none;">
+                <label>Nome + Yeshua</label>
+                <input type="text" id="nomeUsuario" placeholder="Everton Yeshua">
+            </div>
+
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" id="emailUsuario" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="campo">
+                <label id="labelSenha">Senha</label>
+                <div class="inputSenha">
+                    <input type="password" id="senhaUsuario" placeholder="Digite sua senha" required>
+                    <i class="bi bi-eye" id="toggleSenha"></i>
+                </div>
+            </div>
+
+            <button type="submit" id="btnAcao">Entrar</button>
+
+            <p class="msgCadastro">
+                <span id="textoAlternar">Primeira vez aqui?</span> 
+                <span id="criarConta" style="color: #f56e00; cursor: pointer; font-weight: bold;">Criar conta</span>
+            </p>
+
+        </form>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
